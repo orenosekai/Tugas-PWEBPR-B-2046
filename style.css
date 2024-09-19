@@ -1,0 +1,660 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+#nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 50px;
+}
+
+#nav-items {
+    display: flex;
+    gap: 50px;
+}
+
+#nav-items a {
+    text-decoration: none;
+    color: black;
+
+    font-weight: 600;
+
+}
+
+#nav-items a:hover {
+    color: rgb(114, 114, 114);
+}
+
+.title {
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#container-card {
+    display: grid;
+    grid-template-columns: repeat(4,240px);
+    grid-template-rows: repeat(3,185px);
+    gap: 30px;
+    justify-content: center;
+}
+
+#luffy-card {
+    display: flex;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color:#FFF4DC;
+}
+
+.luffy-img {
+    width: 50%;
+}
+
+.luffy-img img{
+    margin-top: -45px;
+    margin-left: -15px;
+}
+
+.luffy-teks {
+    width: 75%;
+}
+
+.luffy-teks h1 {
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.luffy-teks p {
+    margin-top: 5px;
+}
+
+.luffy-button {
+    color: #FFFFFF;
+    background-color: #E29A00;
+    border: none;
+    width: 230px;
+    height: 40px;
+    margin-top: 16px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#zoro-card {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #E1FFDC;
+}
+
+.zoro-img {  
+    width: 100%;
+    margin-top: -5px;
+}
+
+.zoro-button {
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    border: none;
+    margin-left:-210px;
+    margin-top: 135px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #7EB782;
+    cursor: pointer;
+}
+
+#nami-card {
+    grid-column: 1;
+    grid-row: 3 / 3;
+    background-color: #FFCED7;
+
+}
+
+.nami-img {
+    width: 100%;
+    margin-top: -1px;
+}
+
+.nami-button {
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    border: none;
+    margin-left:-210px;
+    margin-top: 135px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #FF5573;
+    cursor: pointer;
+}
+
+#sanji-card {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    background-color: #E2F2FF;
+}
+
+.sanji-img {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sanji-teks h1 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sanji-teks p {
+    width:50%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 3px;
+    margin-left: 60px;
+}
+
+.sanji-button {
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    border: none;
+    margin-left:30px;
+    margin-top: 2px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #3279AF;
+    cursor: pointer;
+}
+
+#container-cards-a {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+    background-color: #F4F4F4;
+}
+
+#container-cards-b {
+    grid-column: 3 / 5;
+    grid-row: 3;
+    background-color: #F2F2F2;
+}
+
+#container-subcard-a {
+    display: grid;
+    grid-template-columns: 430px;
+    grid-template-rows: repeat(3,100px)  ;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+}
+
+#usop-card {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.usop-img-container {
+    width: 50%;
+}
+
+.usop-img {
+    width: 52%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.usop-teks {
+    width: 100%;
+}
+
+.usop-teks p {
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: -45px;
+}
+
+.usop-button {
+    position: absolute;
+    border: none;
+    width: 200px;
+    height: 25px;
+    background-color: #D8D6C1;
+    margin-top: -15px;
+    margin-left: -41px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#chopper-card {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.chopper-img-container {
+    width: 50%;
+}
+
+.chopper-img {
+    width: 36%;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.chopper-teks {
+    width: 50%;
+}
+
+.chopper-teks p {
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: -115px;
+}
+
+.chopper-button {
+    position: absolute;
+    border: none;
+    width: 200px;
+    height: 25px;
+    background-color: #D8D6C1;
+    margin-top: -17px;
+    margin-left: -113px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#robin-card {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.robin-img-container {
+    width: 50%;
+}
+
+.robin-img {
+    width: 35%;
+    margin-top: 12px;
+    margin-left: 13px;
+}
+
+.robin-teks {
+    width: 50%;
+}
+
+.robin-teks p {
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: -115px;
+}
+
+.robin-button {
+    position: absolute;
+    border: none;
+    width: 200px;
+    height: 25px;
+    background-color: #D8D6C1;
+    margin-top: -17px;
+    margin-left: -115px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#container-subcard-b {
+    display: grid;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: 130px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#brook-card {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+}
+
+.brook-img-container {
+    width: 50%;
+}
+
+.brook-img {
+    width: 95%;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.brook-teks {
+    width: 50%;
+}
+
+.brook-teks p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 55px;
+    margin-left: 15px;
+}
+
+.brook-button {
+    position: absolute;
+    border: none;
+    width: 100px;
+    height: 55px;
+    background-color: #D8D6C1;
+    margin-top: -10px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+#jinbe-card {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+}
+
+.jinbe-img-container {
+    width: 50%;
+}
+
+.jinbe-img {
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 0;
+}
+
+.jinbe-teks {
+    width: 50%;
+}
+
+.jinbe-teks p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 55px;
+    margin-left: 15px;
+}
+
+.jinbe-button {
+    position: absolute;
+    border: none;
+    width: 100px;
+    height: 55px;
+    background-color: #D8D6C1;
+    margin-top: -10px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.border-radius-card {
+    border-radius: 15px;
+}
+
+.border {
+    border: 1px solid #D8D6C1;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav-container {
+        width: 100%;
+        height: 40px;
+    }
+
+    #nav-items {
+        margin-right: 45px;
+    }
+
+    #nav-items a {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 24px;
+        padding: 30px 0;
+        padding-bottom: 50px;
+    }
+
+    #container-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    #luffy-card, #zoro-card, #nami-card, #sanji-card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #luffy-card {
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .luffy-img img{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: -60px;
+        margin-left: 3px;
+    }
+
+    .luffy-button {
+        width: 80%;
+        margin-top: -18px;
+        margin-left: 22px;
+        overflow: hidden;
+    }
+
+    .luffy-teks {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .luffy-teks h1 {
+        font-size: 26px; 
+        margin: 10px 0;
+        text-align: center;
+        margin-right: 9px;  
+    }
+
+    .luffy-teks p {
+        text-align: center;
+        font-weight: 500;
+        margin-top: -10px;
+    }
+
+    #zoro-card, #nami-card , #usop-card , #chopper-card, #robin-card, #brook-card, #jinbe-card {
+        height: 193px;
+    }
+
+    .zoro-button {
+        margin-top: 140px;
+    }
+
+   .nami-button {
+        margin-top: 142px;
+    }
+
+    #sanji-card {
+        margin-top: 30px;
+        height: 280px;
+    }
+
+    .sanji-img {
+        margin-top: -50px;
+    }
+
+    .sanji-teks {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2px;
+    }
+
+    .sanji-teks h1 {
+        font-size: 22px; 
+        text-align: center;
+        margin-right: 9px; 
+    }
+
+    .sanji-teks p {
+        width: 75%;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 25px;
+    }
+
+    .sanji-button {
+        margin-top: -135px;
+        margin-bottom: 20px;
+        width: 185px;
+    }
+
+    #container-cards-a {
+        background-color: white;
+        height: 610px;
+    }
+
+    #container-subcard-a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #usop-card, #chopper-card, #robin-card{
+        border: none;
+        background-color: #E9E8E2;
+    }
+
+    #usop-card {
+        margin-top: -25px;
+    }
+
+    .usop-img-container, .chopper-img-container {
+        width: 100%;
+    }
+
+    .usop-img{
+        width: 163%;
+        margin-top: -8px;
+        margin-left: 20px;
+    }
+
+    .chopper-img {
+        width: 113%;
+        margin-top: -12px;
+        margin-left: 30px;
+    }
+
+    .robin-img {
+        width: 154%;
+        margin-top: -1px;
+        margin-left: 30px;
+    }
+
+    .usop-teks p, .chopper-teks p, .robin-teks p, .brook-teks p, .jinbe-teks p{
+        display: none;
+    }
+
+    .usop-button , .chopper-button, .robin-button, .brook-button, .jinbe-button{
+        position: absolute;
+        width: 185px;
+        height: 40px;
+        background-color: #CAC8B3;
+        font-size: 18px;
+    }
+
+    .usop-button {
+        margin-top: 140px;
+        margin-left: -94px;
+    }
+
+    .chopper-button {
+        margin-top: 143px;
+        margin-left: -136px;
+    }
+
+    .robin-button {
+        margin-top: 145px;
+        margin-left: -96px;
+    }
+
+    .brook-img {
+        width: 137%;
+        margin-top: -1px;
+        margin-left: 42px;
+    }
+
+    .brook-button {
+        margin-top: -60px;
+        margin-left: 33px;
+        background-color: #E36415;
+    }
+
+    .jinbe-img {
+        width: 160%;
+        margin-top: 2px;
+        margin-left: 26px;
+    }
+
+    .jinbe-button {
+        background-color: #275E87;
+        margin-top: -68px;
+        margin-left: 30px;
+    }
+
+    #container-cards-b {
+        background-color: white;
+        height: 450px;
+    }
+    
+    #container-subcard-b {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #brook-card, #jinbe-card {
+        width: 262px;
+    }
+
+    #brook-card {
+        background-color: #FFDBC5;
+        flex-direction: column;
+    }
+
+    #jinbe-card {
+        margin-top: 10px;
+        background-color: #8FC5ED;
+        flex-direction: column;
+    }
+
+}   
